@@ -5,7 +5,7 @@ This package provides a complete solution for crawling and downloading media
 from various platforms like YouTube and SoundCloud.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.3"
 __author__ = "Media Crawler Team"
 
 # Import main classes for easy access

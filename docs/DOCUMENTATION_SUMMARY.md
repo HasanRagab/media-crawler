@@ -111,7 +111,7 @@ This document summarizes all documentation created for the Media Crawler project
 **Location**: `/CHANGELOG.md`
 **Purpose**: Version history
 **Contents**:
-- Version 1.0.0 release notes
+- Version 1.0.3 release notes
 - Feature list
 - Technical details
 - Known limitations

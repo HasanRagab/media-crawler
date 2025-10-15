@@ -409,4 +409,4 @@ MIT License - see [LICENSE](LICENSE) file.
 ---
 
 **Last Updated**: October 15, 2025
-**Version**: 1.0.0
+**Version**: 1.0.3

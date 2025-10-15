@@ -17,7 +17,7 @@ if requirements_file.exists():
 
 setup(
     name="pymedia-crawler",
-    version="1.0.0",
+    version="1.0.3",
     author="Hasan Ragab",
     author_email="hasanmragab@gmail.com",
     description="A robust, extensible web crawler for downloading media content from YouTube, SoundCloud, and more",
@@ -48,7 +48,7 @@ setup(
             "pytest-cov>=4.0.0",
             "black>=23.0.0",
             "flake8>=6.0.0",
-            "mypy>=1.0.0",
+            "mypy>=1.0.3",
         ],
         "auto-chromedriver": [
             "webdriver-manager>=4.0.0",

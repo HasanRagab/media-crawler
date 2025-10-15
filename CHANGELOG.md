@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.3/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release preparation
 - Complete documentation suite
 
-## [1.0.0] - 2024-10-15
+## [1.0.3] - 2024-10-15
 
 ### Added
 - Core crawler functionality with depth-based traversal
@@ -177,13 +177,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
-- **1.0.0** - First stable release with full feature set
+- **1.0.3** - First stable release with full feature set
 - **0.9.0** - Beta release with core functionality
 - **0.5.0** - Alpha/proof of concept
 
 ## Upgrade Guide
 
-### From 0.9.0 to 1.0.0
+### From 0.9.0 to 1.0.3
 
 **Configuration Changes:**
 - State file management has been simplified
@@ -208,7 +208,7 @@ crawler = CrawlerFactory.create_crawler(
     state_file="state.json"
 )
 
-# New (1.0.0)
+# New (1.0.3)
 crawler = CrawlerFactory.create_crawler(
     config=config,
     start_urls=urls,

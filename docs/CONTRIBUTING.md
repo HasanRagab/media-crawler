@@ -435,7 +435,7 @@ What actually happened
 **Environment**
 - OS: [e.g., Ubuntu 22.04]
 - Python version: [e.g., 3.10]
-- Package version: [e.g., 1.0.0]
+- Package version: [e.g., 1.0.3]
 
 **Additional context**
 Any other relevant information
@@ -498,7 +498,7 @@ Maintainers handle releases:
 
 1. Update version in `setup.py` and `__init__.py`
 2. Update `CHANGELOG.md`
-3. Create git tag: `v1.0.0`
+3. Create git tag: `v1.0.3`
 4. Build and publish to PyPI
 5. Create GitHub release
 
