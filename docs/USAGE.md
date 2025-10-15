@@ -58,7 +58,7 @@ Before installing, ensure you have:
 
 ```bash
 # From source
-git clone https://github.com/yourusername/media-crawler.git
+git clone https://github.com/HasanRagab/media-crawler.git
 cd media-crawler
 pip install -r requirements.txt
 pip install -e .

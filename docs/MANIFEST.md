@@ -295,7 +295,7 @@ This manifest lists all documentation files created and their purposes.
 - **Can't find info**: Check [INDEX.md](INDEX.md)
 - **Installation issues**: See [USAGE.md](USAGE.md#troubleshooting)
 - **API questions**: Check [API.md](API.md)
-- **Still stuck**: [Open an issue](https://github.com/yourusername/media-crawler/issues)
+- **Still stuck**: [Open an issue](https://github.com/HasanRagab/media-crawler/issues)
 
 ---
 

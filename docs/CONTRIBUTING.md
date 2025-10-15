@@ -33,7 +33,7 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/media-crawler.git
+   git clone https://github.com/HasanRagab/media-crawler.git
    cd media-crawler
    ```
 3. **Add upstream remote**:

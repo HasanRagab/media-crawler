@@ -43,7 +43,7 @@ brew install chromium chromedriver ffmpeg
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/media-crawler.git
+git clone https://github.com/HasanRagab/media-crawler.git
 cd media-crawler
 
 # Create virtual environment
@@ -311,9 +311,9 @@ python cli.py youtube -k "music" -v
 ## Getting Help
 
 - 📚 **Documentation**: Check [README.md](../README.md) and [docs/](.)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/media-crawler/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/media-crawler/discussions)
-- 📧 **Email**: hasanmragan@gmail.com
+- 🐛 **Issues**: [GitHub Issues](https://github.com/HasanRagab/media-crawler/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/HasanRagab/media-crawler/discussions)
+- 📧 **Email**: hasanmragab@gmail.com
 
 ## Examples
 

@@ -43,7 +43,7 @@ A robust, extensible web crawler for downloading media content from YouTube, Sou
 
 ```bash
 # Clone the repository
-git clone https://github.com/hasanmragan/media-crawler.git
+git clone https://github.com/HasanRagab/media-crawler.git
 cd media-crawler
 
 # Create a virtual environment
@@ -448,7 +448,7 @@ media-crawler/
 
 ```bash
 # Clone repository
-git clone https://github.com/hasanmragan/media-crawler.git
+git clone https://github.com/HasanRagab/media-crawler.git
 cd media-crawler
 
 # Create virtual environment
@@ -561,9 +561,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/hasanmragan/media-crawler/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/hasanmragan/media-crawler/discussions)
-- **Email**: hasanmragan@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/HasanRagab/media-crawler/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/HasanRagab/media-crawler/discussions)
+- **Email**: hasanmragab@gmail.com
 
 ## 🗺️ Roadmap
 

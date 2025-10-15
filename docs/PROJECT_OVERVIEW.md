@@ -402,9 +402,9 @@ MIT License - see [LICENSE](LICENSE) file.
 ### Contact
 
 - **Author**: Hasan Ragab
-- **Email**: hasanmragan@gmail.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/media-crawler/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/media-crawler/discussions)
+- **Email**: hasanmragbn@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/HasanRagab/media-crawler/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/HasanRagab/media-crawler/discussions)
 
 ---
 

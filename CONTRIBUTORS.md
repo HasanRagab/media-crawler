@@ -6,7 +6,7 @@ Thank you to everyone who has contributed to Media Crawler!
 
 ### Hasan Ragab
 - **Role**: Creator & Lead Developer
-- **Email**: hasanmragan@gmail.com
+- **Email**: hasanmragab@gmail.com
 - **Contributions**: Project architecture, core implementation, documentation
 - **GitHub**: [@HasanRagab](https://github.com/HasanRagab)
 

@@ -219,9 +219,9 @@ crawler = CrawlerFactory.create_crawler(
 ## Support
 
 For issues, questions, or contributions:
-- **GitHub Issues**: [Report bugs or request features](https://github.com/hasanmragan/media-crawler/issues)
-- **GitHub Discussions**: [Ask questions or discuss](https://github.com/hasanmragan/media-crawler/discussions)
-- **Email**: hasanmragan@gmail.com
+- **GitHub Issues**: [Report bugs or request features](https://github.com/HasanRagab/media-crawler/issues)
+- **GitHub Discussions**: [Ask questions or discuss](https://github.com/HasanRagab/media-crawler/discussions)
+- **Email**: hasanmragab@gmail.com
 
 ---
 

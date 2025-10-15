@@ -141,7 +141,7 @@ download_config = DownloadConfig(audio_quality="320")
 ## 🆘 Getting Help
 
 ### Documentation Issues
-- **Can't find what you need?** [Open an issue](https://github.com/yourusername/media-crawler/issues)
+- **Can't find what you need?** [Open an issue](https://github.com/HasanRagab/media-crawler/issues)
 - **Found an error?** Submit a PR to fix it
 - **Want to improve docs?** See [Contributing Guide](CONTRIBUTING.md)
 
@@ -153,13 +153,13 @@ download_config = DownloadConfig(audio_quality="320")
 ### Development Questions
 - **Architecture questions?** See [Architecture](ARCHITECTURE.md)
 - **Contributing questions?** See [Contributing Guide](CONTRIBUTING.md)
-- **Technical questions?** [GitHub Discussions](https://github.com/yourusername/media-crawler/discussions)
+- **Technical questions?** [GitHub Discussions](https://github.com/HasanRagab/media-crawler/discussions)
 
 ## 📧 Contact
 
-- **Email**: hasanmragan@gmail.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/media-crawler/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/media-crawler/discussions)
+- **Email**: hasanmragab@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/HasanRagab/media-crawler/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/HasanRagab/media-crawler/discussions)
 
 ## 🔗 External Resources
 
