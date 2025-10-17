@@ -7,12 +7,12 @@
 │                           USER INTERFACE LAYER                          │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│   ┌──────────┐      ┌──────────┐      ┌──────────┐      ┌──────────┐  │
-│   │  CLI     │      │  main.py │      │ examples │      │  Custom  │  │
-│   │  (cli.py)│      │          │      │   .py    │      │   Code   │  │
-│   └─────┬────┘      └────┬─────┘      └────┬─────┘      └────┬─────┘  │
-│         │                │                  │                 │        │
-│         └────────────────┴──────────────────┴─────────────────┘        │
+│   ┌──────────┐      ┌──────────┐       ┌──────────┐      ┌──────────┐   │
+│   │  CLI     │      │  main.py │       │ examples │      │  Custom  │   │
+│   │  (cli.py)│      │          │       │   .py    │      │   Code   │   │
+│   └─────┬────┘      └────┬─────┘       └────┬─────┘      └────┬─────┘   │
+│         │                │                  │                 │         │
+│         └────────────────┴──────────────────┴─────────────────┘         │
 │                                    │                                    │
 └────────────────────────────────────┼────────────────────────────────────┘
                                      │
@@ -21,25 +21,25 @@
 │                          FACTORY LAYER                                  │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│                      ┌───────────────────────┐                         │
-│                      │   CrawlerFactory      │                         │
-│                      │                       │                         │
-│                      │ ┌───────────────────┐ │                         │
-│                      │ │ create_crawler    │ │                         │
-│                      │ │ create_youtube    │ │                         │
-│                      │ │ create_soundcloud │ │                         │
-│                      │ └───────────────────┘ │                         │
-│                      └───────────┬───────────┘                         │
-│                                  │                                     │
-│        ┌────────────┬────────────┼────────────┬────────────┐          │
-│        │            │            │            │            │          │
-│        ▼            ▼            ▼            ▼            ▼          │
-│   ┌─────────┐  ┌────────┐  ┌─────────┐  ┌────────┐  ┌──────────┐    │
-│   │Database │  │WebDriver│ │Download │  │  Link  │  │  State   │    │
-│   │ Factory │  │ Factory │  │ Manager │  │Extract.│  │ Manager  │    │
-│   │         │  │         │  │ Factory │  │Factory │  │          │    │
-│   └────┬────┘  └────┬────┘  └────┬────┘  └────┬───┘  └────┬─────┘    │
-└────────┼────────────┼────────────┼────────────┼───────────┼───────────┘
+│                      ┌───────────────────────┐                          │
+│                      │   CrawlerFactory      │                          │
+│                      │                       │                          │
+│                      │ ┌───────────────────┐ │                          │
+│                      │ │ create_crawler    │ │                          │
+│                      │ │ create_youtube    │ │                          │
+│                      │ │ create_soundcloud │ │                          │
+│                      │ └───────────────────┘ │                          │
+│                      └───────────┬───────────┘                          │
+│                                  │                                      │
+│        ┌────────────┬────────────┼────────────┬────────────┐            │
+│        │            │            │            │            │            │
+│        ▼            ▼            ▼            ▼            ▼            │
+│   ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌────────┐  ┌──────────┐       │
+│   │Database │  │WebDriver│  │Download │  │  Link  │  │  State   │       │
+│   │ Factory │  │ Factory │  │ Manager │  │Extract.│  │ Manager  │       │
+│   │         │  │         │  │ Factory │  │Factory │  │          │       │
+│   └────┬────┘  └────┬────┘  └────┬────┘  └────┬───┘  └────┬─────┘       │
+└────────┼────────────┼────────────┼────────────┼───────────┼─────────────┘
          │            │            │            │           │
          │            │            │            │           │
          ▼            ▼            ▼            ▼           ▼
@@ -47,41 +47,41 @@
 │                          BUSINESS LOGIC LAYER                           │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│                        ┌──────────────────┐                            │
-│                        │     CRAWLER      │                            │
-│                        │                  │                            │
-│                        │  ┌────────────┐  │                            │
-│                        │  │   crawl()  │  │                            │
-│                        │  │   close()  │  │                            │
-│                        │  │ get_stats()│  │                            │
-│                        │  └────────────┘  │                            │
-│                        └────────┬─────────┘                            │
-│                                 │                                      │
-│          ┌──────────────────────┼──────────────────────┐               │
-│          │          │           │           │          │               │
-│          ▼          ▼           ▼           ▼          ▼               │
-│     ┌─────────┐ ┌──────┐  ┌─────────┐ ┌────────┐ ┌────────┐          │
-│     │IDatabase│ │IWeb  │  │Download │ │ ILink  │ │ State  │          │
-│     │         │ │Driver│  │ Manager │ │Extract.│ │Manager │          │
-│     └────┬────┘ └──┬───┘  └────┬────┘ └────┬───┘ └────┬───┘          │
-└──────────┼─────────┼───────────┼───────────┼──────────┼───────────────┘
+│                        ┌──────────────────┐                             │
+│                        │     CRAWLER      │                             │
+│                        │                  │                             │
+│                        │  ┌────────────┐  │                             │
+│                        │  │   crawl()  │  │                             │
+│                        │  │   close()  │  │                             │
+│                        │  │ get_stats()│  │                             │
+│                        │  └────────────┘  │                             │
+│                        └────────┬─────────┘                             │
+│                                 │                                       │
+│          ┌──────────────────────┼──────────────────────┐                │
+│          │          │           │           │          │                │
+│          ▼          ▼           ▼           ▼          ▼                │
+│     ┌─────────┐ ┌──────┐  ┌─────────┐ ┌────────┐ ┌────────┐             │
+│     │IDatabase│ │IWeb  │  │Download │ │ ILink  │ │ State  │             │
+│     │         │ │Driver│  │ Manager │ │Extract.│ │Manager │             │
+│     └────┬────┘ └──┬───┘  └────┬────┘ └────┬───┘ └────┬───┘             │
+└──────────┼─────────┼───────────┼───────────┼──────────┼─────────────────┘
            │         │           │           │          │
            ▼         ▼           ▼           ▼          ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                       IMPLEMENTATION LAYER                              │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│  ┌──────────────┐  ┌────────────┐  ┌─────────────┐  ┌──────────────┐  │
-│  │   SQLite     │  │  Selenium  │  │   YtDlp     │  │   YouTube    │  │
-│  │   Database   │  │  WebDriver │  │   Download  │  │     Link     │  │
-│  │              │  │            │  │   Strategy  │  │  Extractor   │  │
-│  └──────────────┘  └────────────┘  └─────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌────────────┐  ┌─────────────┐  ┌──────────────┐    │
+│  │   SQLite     │  │  Selenium  │  │   YtDlp     │  │   YouTube    │    │
+│  │   Database   │  │  WebDriver │  │   Download  │  │     Link     │    │
+│  │              │  │            │  │   Strategy  │  │  Extractor   │    │
+│  └──────────────┘  └────────────┘  └─────────────┘  └──────────────┘    │
 │                                                                         │
-│  ┌──────────────┐                                   ┌──────────────┐  │
-│  │  PostgreSQL  │                                   │  SoundCloud  │  │
-│  │  Database    │                                   │     Link     │  │
-│  │  (future)    │                                   │  Extractor   │  │
-│  └──────────────┘                                   └──────────────┘  │
+│  ┌──────────────┐                                   ┌──────────────┐    │
+│  │  PostgreSQL  │                                   │  SoundCloud  │    │
+│  │  Database    │                                   │     Link     │    │
+│  │  (future)    │                                   │  Extractor   │    │
+│  └──────────────┘                                   └──────────────┘    │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
            │         │           │           │          │
@@ -90,16 +90,16 @@
 │                          DATA/INFRASTRUCTURE                            │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│  ┌───────────┐   ┌────────────┐   ┌──────────┐   ┌────────────────┐  │
-│  │  SQLite   │   │   Chrome   │   │  yt-dlp  │   │  State Files   │  │
-│  │  Database │   │  Browser   │   │  Library │   │     (.json)    │  │
-│  │   (.db)   │   │  (Selenium)│   │          │   │                │  │
-│  └───────────┘   └────────────┘   └──────────┘   └────────────────┘  │
+│  ┌───────────┐   ┌────────────┐   ┌──────────┐   ┌────────────────┐     │
+│  │  SQLite   │   │   Chrome   │   │  yt-dlp  │   │  State Files   │     │
+│  │  Database │   │  Browser   │   │  Library │   │     (.json)    │     │
+│  │   (.db)   │   │  (Selenium)│   │          │   │                │     │
+│  └───────────┘   └────────────┘   └──────────┘   └────────────────┘     │
 │                                                                         │
-│  ┌───────────────────────────────────────────────────────────────────┐ │
-│  │                    Download Folder                                │ │
-│  │                    (MP3/Audio Files)                              │ │
-│  └───────────────────────────────────────────────────────────────────┘ │
+│  ┌───────────────────────────────────────────────────────────────────┐  │
+│  │                    Download Folder                                │  │
+│  │                    (MP3/Audio Files)                              │  │
+│  └───────────────────────────────────────────────────────────────────┘  │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
@@ -135,16 +135,16 @@ User Request
 ┌─────────────────────────────────────────────────────────────────┐
 │                         CRAWLER                                 │
 │                                                                 │
-│  1. Load State        ────►  StateManager.load_state()         │
+│  1. Load State        ────►  StateManager.load_state()          │
 │  2. Pop URL from queue                                          │
-│  3. Load Page         ────►  WebDriver.get_page_source()       │
-│  4. Extract Links     ────►  LinkExtractor.extract_*()         │
-│  5. Check Downloaded  ────►  Database.is_downloaded()          │
-│  6. Download Content  ────►  DownloadManager.download()        │
-│  7. Save to DB        ────►  Database.save_track()             │
-│  8. Mark Downloaded   ────►  Database.mark_downloaded()        │
+│  3. Load Page         ────►  WebDriver.get_page_source()        │
+│  4. Extract Links     ────►  LinkExtractor.extract_*()          │
+│  5. Check Downloaded  ────►  Database.is_downloaded()           │
+│  6. Download Content  ────►  DownloadManager.download()         │
+│  7. Save to DB        ────►  Database.save_track()              │
+│  8. Mark Downloaded   ────►  Database.mark_downloaded()         │
 │  9. Queue New Links                                             │
-│ 10. Save State        ────►  StateManager.save_state()         │
+│ 10. Save State        ────►  StateManager.save_state()          │
 │ 11. Repeat until queue empty                                    │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -157,55 +157,55 @@ User Request
 │                      STRATEGY PATTERN                           │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│   IDownloadStrategy          ILinkExtractor                    │
-│         △                           △                          │
-│         │                           │                          │
-│    ┌────┴────┐                 ┌───┴───┐                       │
-│    │         │                 │       │                       │
-│  YtDlp   Aria2            YouTube  SoundCloud                  │
+│   IDownloadStrategy          ILinkExtractor                     │
+│         △                           △                           │
+│         │                           │                           │
+│    ┌────┴────┐                  ┌───┴───┐                       │
+│    │         │                  │       │                       │
+│  YtDlp   Aria2             YouTube  SoundCloud                  │
 │                                                                 │
-│  Allows switching download/extraction strategies at runtime    │
+│  Allows switching download/extraction strategies at runtime     │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                      FACTORY PATTERN                            │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│   CrawlerFactory.create_crawler(config, urls)                  │
+│   CrawlerFactory.create_crawler(config, urls)                   │
 │          │                                                      │
-│          ├──► DatabaseFactory.create_database()                │
-│          ├──► WebDriverFactory.create_driver()                 │
-│          ├──► DownloadManagerFactory.create_manager()          │
-│          ├──► LinkExtractorFactory.create_extractor()          │
+│          ├──► DatabaseFactory.create_database()                 │
+│          ├──► WebDriverFactory.create_driver()                  │
+│          ├──► DownloadManagerFactory.create_manager()           │
+│          ├──► LinkExtractorFactory.create_extractor()           │
 │          └──► StateManager()                                    │
 │                                                                 │
-│  Encapsulates complex object creation logic                    │
+│  Encapsulates complex object creation logic                     │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                 DEPENDENCY INJECTION                            │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│   Crawler(database, webdriver, downloader, extractor, ...)     │
+│   Crawler(database, webdriver, downloader, extractor, ...)      │
 │                                                                 │
-│   All dependencies injected via constructor                    │
-│   → Easy to test with mocks                                    │
-│   → No hidden dependencies                                     │
-│   → Clear dependency graph                                     │
+│   All dependencies injected via constructor                     │
+│   → Easy to test with mocks                                     │
+│   → No hidden dependencies                                      │
+│   → Clear dependency graph                                      │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                 TEMPLATE METHOD PATTERN                         │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│   BaseLinkExtractor (abstract)                                 │
+│   BaseLinkExtractor (abstract)                                  │
 │         │                                                       │
-│         ├──► _is_valid_domain() [common]                       │
-│         ├──► _should_ignore() [common]                         │
-│         ├──► extract_content_links() [override]                │
-│         └──► extract_navigation_links() [override]             │
+│         ├──► _is_valid_domain() [common]                        │
+│         ├──► _should_ignore() [common]                          │
+│         ├──► extract_content_links() [override]                 │
+│         └──► extract_navigation_links() [override]              │
 │                                                                 │
-│   Common behavior in base, specific in subclasses              │
+│   Common behavior in base, specific in subclasses               │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -222,22 +222,22 @@ User Request
                     └────────┬─────────┘
                              │
                              ▼
-         ┌───────────────────────────────────────┐
-         │                                       │
-    Depth 0                                 Depth 1, 2, ...
-         │                                       │
-         ▼                                       ▼
-┌──────────────────┐                    ┌──────────────────┐
-│  Load Page       │                    │  Load Page       │
-│  (WebDriver)     │                    │  (WebDriver)     │
-└────────┬─────────┘                    └────────┬─────────┘
-         │                                       │
-         ▼                                       ▼
-┌──────────────────┐                    ┌──────────────────┐
-│  Extract Links   │                    │  Extract Links   │
-│  (LinkExtractor) │                    │  (LinkExtractor) │
-└────────┬─────────┘                    └────────┬─────────┘
-         │                                       │
+         ┌──────────────────────────────────────┐
+         │                                      │
+    Depth 0                                Depth 1, 2, ...
+         │                                      │
+         ▼                                      ▼
+┌──────────────────┐                   ┌──────────────────┐
+│  Load Page       │                   │  Load Page       │
+│  (WebDriver)     │                   │  (WebDriver)     │
+└────────┬─────────┘                   └────────┬─────────┘
+         │                                      │
+         ▼                                      ▼
+┌──────────────────┐                   ┌──────────────────┐
+│  Extract Links   │                   │  Extract Links   │
+│  (LinkExtractor) │                   │  (LinkExtractor) │
+└────────┬─────────┘                   └────────┬─────────┘
+         │                                      │
          ├──────► Content Links                 ├──────► Content Links
          │        (download)                    │        (download)
          │             │                        │             │
@@ -271,12 +271,12 @@ User Request
 │ Single Responsibility Principle (SRP)                                │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Database       → Only handles data persistence                     │
-│  WebDriver      → Only handles browser automation                   │
-│  Downloader     → Only handles downloads                            │
-│  LinkExtractor  → Only extracts/validates links                     │
-│  StateManager   → Only manages state                                │
-│  Crawler        → Only orchestrates the crawl                       │
+│  Database       → Only handles data persistence                      │
+│  WebDriver      → Only handles browser automation                    │
+│  Downloader     → Only handles downloads                             │
+│  LinkExtractor  → Only extracts/validates links                      │
+│  StateManager   → Only manages state                                 │
+│  Crawler        → Only orchestrates the crawl                        │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 
@@ -284,10 +284,10 @@ User Request
 │ Open/Closed Principle (OCP)                                          │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Open for extension:  Add new platforms by implementing interfaces  │
-│  Closed for modification: Don't change existing platform code       │
+│  Open for extension:  Add new platforms by implementing interfaces   │
+│  Closed for modification: Don't change existing platform code        │
 │                                                                      │
-│  Example: Add Spotify without modifying YouTube code                │
+│  Example: Add Spotify without modifying YouTube code                 │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 
@@ -295,11 +295,11 @@ User Request
 │ Liskov Substitution Principle (LSP)                                  │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Any IDatabase implementation can replace another                   │
-│  Any IWebDriver implementation can replace another                  │
-│  Any IDownloadStrategy implementation can replace another           │
+│  Any IDatabase implementation can replace another                    │
+│  Any IWebDriver implementation can replace another                   │
+│  Any IDownloadStrategy implementation can replace another            │
 │                                                                      │
-│  SQLiteDatabase ←→ PostgreSQLDatabase (drop-in replacement)         │
+│  SQLiteDatabase ←→ PostgreSQLDatabase (drop-in replacement)          │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 
@@ -307,13 +307,13 @@ User Request
 │ Interface Segregation Principle (ISP)                                │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  Small, focused interfaces:                                         │
-│    - IDatabase: save, is_downloaded, mark_downloaded, get, close    │
-│    - IWebDriver: get_page_source, close                            │
-│    - IDownloadStrategy: download                                    │
-│    - ILinkExtractor: extract_content_links, extract_nav_links      │
+│  Small, focused interfaces:                                          │
+│    - IDatabase: save, is_downloaded, mark_downloaded, get, close     │
+│    - IWebDriver: get_page_source, close                              │
+│    - IDownloadStrategy: download                                     │
+│    - ILinkExtractor: extract_content_links, extract_nav_links        │
 │                                                                      │
-│  Clients only depend on methods they actually use                   │
+│  Clients only depend on methods they actually use                    │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 
@@ -321,12 +321,12 @@ User Request
 │ Dependency Inversion Principle (DIP)                                 │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
-│  High-level Crawler depends on abstractions (interfaces):           │
-│    - IDatabase (not SQLiteDatabase)                                 │
-│    - IWebDriver (not SeleniumWebDriver)                             │
-│    - IDownloadStrategy (not YtDlpDownloadStrategy)                  │
+│  High-level Crawler depends on abstractions (interfaces):            │
+│    - IDatabase (not SQLiteDatabase)                                  │
+│    - IWebDriver (not SeleniumWebDriver)                              │
+│    - IDownloadStrategy (not YtDlpDownloadStrategy)                   │
 │                                                                      │
-│  Low-level modules implement these abstractions                     │
+│  Low-level modules implement these abstractions                      │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 ```
